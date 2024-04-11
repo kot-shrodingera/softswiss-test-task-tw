@@ -1,0 +1,15 @@
+@import 'variables';
+
+@mixin respond-to($media) {
+  @if $media == md {
+    @media (min-width: $breakpoint-md) {
+      @content;
+    }
+  }
+
+  @if $media == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}

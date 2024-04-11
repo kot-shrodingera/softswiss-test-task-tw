@@ -1,0 +1,22 @@
+@import '/src/styles/mixins.scss';
+
+.hero {
+  background:
+    url(/images/earth.png) left 16px top -117px / 300px no-repeat,
+    linear-gradient(to bottom, transparent, rgba(15, 20, 32, 0.79)),
+    url(/images/space_1_768px.jpg) center/cover #d9d9d9;
+
+  @include respond-to(md) {
+    background:
+      url(/images/earth.png) top 26px right -73px / 300px no-repeat,
+      linear-gradient(to left, transparent, rgba(15, 20, 32, 0.79)),
+      url(/images/space_1_1248px.jpg) center/cover #d9d9d9;
+  }
+
+  @include respond-to(lg) {
+    background:
+      url(/images/earth.png) top 59px right 90px no-repeat,
+      linear-gradient(to left, transparent, rgba(15, 20, 32, 0.79)),
+      url(/images/space_1_2160px.jpg) center/cover #d9d9d9;
+  }
+}
